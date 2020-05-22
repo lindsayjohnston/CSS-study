@@ -23,6 +23,7 @@ ul {
 nav {
    height: 40px;
    width: 100%;
+   min-width: 800px;
    background-color: black;
    position: fixed;
    top: 0;
@@ -62,6 +63,7 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(40px, auto);
+    min-width: 800px;
     background-color: white;
 }
 
@@ -113,11 +115,14 @@ nav ul{
 }
 
 /* PROJECTS */
+#projects-container{
+    background-color: darkseagreen;
+    background: url('lines-of-code-2653362.jpg') no-repeat center/cover;
+}
 
 #projects-title{
     background-color: darkgray;
     color: white;
-    
 }
 .project-title{
     text-align: center;
@@ -125,7 +130,104 @@ nav ul{
 }
 
 .project-title a{
-    color: black;
+    color:white;
     font-size: 1.5rem;
+    background-color: grey;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
+
+.paragraph{
+    background-color: grey;
+    opacity: 50%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-text{
+    color:white;
+    opacity: none;
+    padding: 10px;
+}
+
+/* ABOUT ME */
+
+#about-container{
+    text-align: center;
+}
+
+#about-sec-1{
+    padding: 75px 0;
+}
+
+#about-sec-2{
+    background: url('lindsay-black-white.jpg') no-repeat center/cover;
+    margin: 10px;
+}
+
+#about-sec-3{
+    padding: 10px 5px;
+}
+
+/* WHAT'S NEXT */
+
+#next-container{
+    background: url('ballpen-blur-close-up-computer-461077.jpg') no-repeat center/cover;
+}
+
+#next-title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: grey;
+}
+
+.next-sec{
+    text-align: center;
+}
+
+/* CONTACT */
+
+#contact-container{
+    grid-template-columns: 1fr 1fr;
+    background-color: grey;
+}
+
+#contact-sec-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0px 0px 20px 0px;
+    
+}
+
+form{
+    margin: 0px 100px;
+}
+
+input{
+    font-size: 1.5rem;
+    padding: 0px 5px;
+}
+
+.form-section input{
+    width: 100%;
+}
+
+#submit-div{
+    text-align: center;
+}
+
+#contact-sec-2{
+    margin: 0px 40px;
+}
+
+/* FOOTER */
+
+#footer{
+    text-align: center;
+}
+
+
+
+
 
