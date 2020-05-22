@@ -5,7 +5,7 @@
 body{
     font-family: 'Fira Sans', sans-serif;
     background-color: rgb(43, 41, 41);
-    color: white;
+    color: black;
     line-height: 1.6;
     margin: 0;
 }
@@ -26,6 +26,8 @@ nav {
    background-color: black;
    position: fixed;
    top: 0;
+   /* display: none; */
+   
 
 }
 nav ul{
@@ -52,13 +54,78 @@ nav ul{
     background-color: cyan;
  }
 
+/* #showcase{
+    background-color: darkorange;
+} */
 
-
-
-
-
-/* Showcase */
-
-#showcase{
+.container{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(40px, auto);
+    background-color: white;
 }
+
+.section-heading{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+/* SHOWCASE */
+
+#top-margin{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#photo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 12;
+    /* background-color: darkorchid; */
+}
+
+#lindsay-photo{
+    max-width: 100%;
+    min-width: 400px;
+    display: flex;
+}
+
+#my-name{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    /* background-color: pink; */
+    text-align: center;  
+}
+
+#self-description{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    /* background-color:blue; */
+    text-align: center; 
+    padding: 15px;
+}
+
+/* PROJECTS */
+
+#projects-title{
+    background-color: darkgray;
+    color: white;
+    
+}
+.project-title{
+    text-align: center;
+    padding: 75px 0;
+}
+
+.project-title a{
+    color: black;
+    font-size: 1.5rem;
+}
+
