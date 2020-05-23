@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 /* ROOT VARIABLES WILL GO HERE FOR COLORS */
+:root{
+    --primary-color: rgb(48, 47, 47);
+    --primary-color-hover: pink; 
+    --secondary-color: black;
+    --light-color: white;
+}
 
 body{
     font-family: 'Fira Sans', sans-serif;
-    background-color: rgb(43, 41, 41);
-    color: black;
+    /* background-color: rgb(43, 41, 41); */
+    color:var(--secondary-color);
     line-height: 1.6;
     margin: 0;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--light-color);
 }
 
 ul {
@@ -23,7 +29,7 @@ ul {
 nav {
    height: 40px;
    width: 100%;
-   background-color: black;
+   background-color: var(--secondary-color);
    position: fixed;
    top: 0;
    min-width: 800px;
@@ -34,7 +40,7 @@ nav {
 nav ul{
     width: 100%;
     padding-left: 10px;
-    background-color: black;
+    background-color: var(--secondary-color);
     overflow: hidden;
     margin: 0;
 }
@@ -52,12 +58,13 @@ nav ul{
  }
 
  nav li a:hover{
-    background-color: cyan;
+    background-color:var(--primary-color-hover);
+    color: var(--secondary-color);
  }
 
-/* #showcase{
-    background-color: darkorange;
-} */
+#showcase-container{
+    height: 70vh;
+}
 
 .container{
     display: grid;
@@ -65,7 +72,7 @@ nav ul{
     /* grid-auto-rows: minmax(40px, auto); */
     /* grid-auto-columns: minmax(40px, 50px); */
     min-width: 800px;
-    background-color: white;
+    background-color: var(--light-color);
 }
 
 .section-heading{
@@ -90,14 +97,18 @@ nav ul{
     grid-row-start: 3;
     grid-row-end: 14;
     /* background-color: darkorchid; */
+    padding: 80px 40px 40px 40px;
+    
 }
 
 #lindsay-photo{
     /* height: 100%; */
-    max-height: 500px;
-    max-width: 100%;
-    min-width: 400px;
-    
+    width: 400px;
+    height: 400px;
+    background-image: url('lindsay-black-white.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;  
 }
 
 
@@ -125,14 +136,17 @@ nav ul{
 }
 
 /* PROJECTS */
+#projects{
+    padding-top: 40px;
+    /* margin: 40px; */
+}
 #projects-container{
-    background-color: darkseagreen;
     background: url('lines-of-code-2653362.jpg') no-repeat center/cover;
 }
 
 #projects-title{
-    background-color: darkgray;
-    color: white;
+    background-color: var(--secondary-color);
+    color:var(--light-color);
 }
 .project-title{
     text-align: center;
@@ -140,46 +154,55 @@ nav ul{
 }
 
 .project-title a{
-    color:white;
+    color:var(--light-color);
     font-size: 1.5rem;
-    background-color: grey;
+    background-color:var(--primary-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .paragraph{
-    background-color: grey;
+    background-color: var(--primary-color);
     opacity: 50%;
     margin: 10px;
     border-radius: 5px;
 }
 
 .project-text{
-    color:white;
+    color:var(--light-color);
     opacity: none;
     padding: 10px;
 }
 
 /* ABOUT ME */
 
+#about{
+    padding-top: 40px;
+    background-color: var(--secondary-color);
+}
+
 #about-container{
     text-align: center;
 }
 
 #about-sec-1{
-    padding: 75px 0;
+    padding: 100px;
 }
 
 #about-sec-2{
-    background: url('lindsay-black-white.jpg') no-repeat center/cover;
+    background: url('Vanna-oh-timbrr.jpeg') no-repeat center/cover;
     margin: 10px;
+    max-height: 500px;
 }
 
 #about-sec-3{
-    padding: 10px 5px;
+    padding: 50px 5px;
 }
 
 /* WHAT'S NEXT */
+#next{
+    padding-top: 40px;
+}
 
 #next-container{
     background: url('ballpen-blur-close-up-computer-461077.jpg') no-repeat center/cover;
@@ -189,18 +212,34 @@ nav ul{
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
-    background-color: grey;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
 }
 
 .next-sec{
     text-align: center;
+    margin: 40px 5px;
+}
+
+#next-container{
+    min-width: 950px;
+}
+
+#next-container h3{
+    background-color: var(--primary-color);
+    margin: 10px 55px;
+    padding: 5px, 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: var(--light-color);
 }
 
 /* CONTACT */
 
 #contact-container{
     grid-template-columns: 1fr 1fr;
-    background-color: grey;
+    background-color:var(--secondary-color);
+    color: var(--light-color);
 }
 
 #contact-sec-1{
@@ -215,8 +254,12 @@ form{
 }
 
 input{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+    height: 30px;
 }
 
 .form-section input{
@@ -226,15 +269,23 @@ input{
 #submit-div{
     text-align: center;
 }
-
+#submit-btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+}
 #contact-sec-2{
     margin: 0px 40px;
 }
 
 /* FOOTER */
 
-#footer{
+#footer p{
     text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin: 0px 0px; 
+    /* height: 60px; */
+    padding: 20px 0px;
 }
 
 
