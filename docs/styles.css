@@ -57,7 +57,7 @@ nav ul{
      
  }
 
- nav li a:hover{
+ a:hover{
     background-color:var(--primary-color-hover);
     color: var(--secondary-color);
  }
@@ -160,6 +160,11 @@ nav ul{
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+.project-title a:hover{
+    background-color:var(--primary-color-hover);
+    color: var(--secondary-color);
+ }
 
 .paragraph{
     background-color: var(--primary-color);
