@@ -2,7 +2,7 @@
 Examples of CSS styles with HTML
 
 ## Goal:
-To use the CSS Grid system to create an attractive and responsive landing page for my CS projects.
+Use the CSS Grid system to create an attractive landing page for my CS projects.
 
 ### Plan:
 Goal for the page: entice someone to hire me as a Software Engineer by showcasing my CS work in an attractive way
@@ -13,7 +13,7 @@ Brand Guidelines:
 -colors: dark grey, white, light blue
 
 ### Copy:
-Lindsay Johnston
+Lindsay Johnston /n
 Software Engineer
 Photo
 Project with description and link
