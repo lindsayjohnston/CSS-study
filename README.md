@@ -13,14 +13,14 @@ Brand Guidelines:
 -colors: dark grey, white, light blue
 
 ### Copy:
-Lindsay Johnston /n
-Software Engineer
-Photo
-Project with description and link
-Project with description and link
-About me
-What's Next
-Contact
+Lindsay Johnston  
+Software Engineer  
+Photo  
+Project with description and link  
+Project with description and link  
+About me  
+What's Next  
+Contact  
 
 
 ## References:
