@@ -107,6 +107,9 @@ a:hover {
     max-width: 600px;
 }
 
+#showcase-words>h2{
+    margin-bottom: 0px;
+}
 #lindsay-photo {
     /* height: 100%; */
     width: 400px;
@@ -189,6 +192,8 @@ a:hover {
 
 /* ABOUT ME */
 
+
+
 #about-section {
     padding-top: 53px;
 }
@@ -214,12 +219,13 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #about-sec-text {
     text-align: center;
     width: 350px;
-    height: 320px;
+    height: fit-content;
     /* margin-right: 60px; */
 }
 
@@ -237,11 +243,12 @@ a:hover {
 
 .about-me-link {
     color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .about-me-link>h2 {
     margin: 0px;
-    padding: 15px;
 }
 
 /* WHAT'S NEXT */
@@ -323,6 +330,10 @@ a:hover {
     .container {
         width: 100%;
     }
+
+    nav li a{
+        margin-right: 5px;
+    }
     #showcase-container {
         flex-direction: column;
     }
@@ -350,7 +361,9 @@ a:hover {
     #about-row{
         width: 750px;
     }
-
+    #about-links{
+        margin: 5px 0px;
+    }
     #about-sec-text{
         width: 40%;
         height: fit-content;
@@ -419,6 +432,7 @@ a:hover {
     #about-row{
         width: 100%;
         flex-direction: column-reverse;
+
     }
 
     #about-sec-text{
