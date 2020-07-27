@@ -38,104 +38,53 @@
     <!-- Title -->
 
     <div id="showcase-container" class="container">
-        <div id="top-margin"></div>
-        <div id="photo">
+        <div id="showcase-photo">
             <div id="lindsay-photo"></div>
             <!-- <img src="lindsay-black-white.jpg" alt="black and white photo of Lindsay Johnston"  id="lindsay-photo"> -->
         </div>
-        <div id="my-name">
-            <h1 class="big-title">Lindsay Johnston</h1>
-        </div>
-        <div id="self-description">
-            <h2 id="description">A web-based resume and showcase of my programming endeavors</h2>
-        </div>
+        <div id="showcase-words">
+                <h1 class="big-title">Lindsay Johnston</h1>
+
+                <h2 id="description">A web-based resume and showcase of my programming endeavors</h2>
+        </div>    
 
     </div>
 
 
     <!-- Projects -->
-    <div id="projects">
+    <div class="section-heading" id="projects-title">
+        <h1>Projects</h1>
+    </div>
         <div id="projects-container" class="container">
-            <div class="section-heading" id="projects-title">
-                <h1>Projects</h1>
+            
+            <div id="project-1" class="project">
+                <a href="https://lindsayjohnston.github.io/Flash-Cards/" target="_blank">GitHub User Map</a>
+                <div class="paragraph">
+                    <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure aliquid consequatur commodi obcaecati modi illo, facilis tempora harum sit quibusdam, vero illum temporibus nostrum quis debitis, nulla ipsam quas?
+                    </p>
+                </div>
             </div>
-            <div id="project-1" class="project-title">
+            <div id="project-2" class="project">
                 <a href="https://lindsayjohnston.github.io/Flash-Cards/" target="_blank">Flash Card App</a>
                 <div class="paragraph">
                     <p class="project-text">Drawing from my experience as a high school teacher, I decided to create a flash card app study tool. I used everything I knew about HTML, CSS, and JavaScript to create an interactive app that a teacher could use to upload a list of terms and definitions that students could use to study. This was also my first foray into using JS classes and prototypes to create users with different credentials.
                     </p>
                 </div>
             </div>
-            <div id="project-2" class="project-title">
-                <a href="https://lindsayjohnston.github.io/Pomodoro-Timer/" target="_blank">Pomodoro Timer</a>
+            <div id="project-3" class="project">
+                <a href="https://lindsayjohnston.github.io/Command-File/" target="_blank">This Webpage</a>
                 <div class="paragraph">
-                    <p class="project-text">Early on in my web-development studies, I learned of the <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a>. I began using it to maximize efficiency as I furthered my studies. This app is a helpful tool for completing a day's "to-do" list with a built-in timer for breaking up tasks into smaller sections.
+                    <p class="project-text"> Let's say something about mobile-friendly blah blah blah
                     </p>
                 </div>
             </div>
-            <div id="project-3" class="project-title">
-                <a href="https://lindsayjohnston.github.io/Command-File/" target="_blank">Git Command Reference</a>
-                <div class="paragraph">
-                    <p class="project-text"> I used this project to start using JavaScript for a functional project. I created a reference tool for Git commands so that I could look them up when I needed them. The commands are saved in Local Storage, so it's not an incredibly useful system unless I'm using the same browser and computer, but the project works as intended! 
-                    </p>
-                </div>
-            </div>
-            <div id="project-4" class="project-title">
-                <a href="https://lindsayjohnston.github.io/JQuery-Playground/" target="_blank">jQuery Study</a>
-                <div class="paragraph">
-                    <p class="project-text"> I used this project to get my feet wet with jQuery. I practiced employing the most common jQuery methods and also gained more experience with responsive design.
-                    </p>
-                </div>
-            </div>
-            <div id="project-5" class="project-title">
-                <a href="#">CSS Study</a>
-                <div class="paragraph">
-                    <p class="project-text">You're looking at it! My goal was to practice using CSS Grid formatting to
-                        create a sleek landing page for my portfolio. I also explored setting my branding colors as CSS
-                        root variables and experimented with different ways to display photos.
-                    </p>
-                </div>
-            </div>
-            <div id="project-6" class="project-title" style="display: none">
-                <a href="https://lindsayjohnston.github.io/Flexbox-vs-Grid-Study/" target="_blank">CSS Flexbox vs Grid
-                    Study</a>
-                <div class="paragraph">
-                    <p class="project-text">I wanted to gain a deeper understanding of how Flexbox and Grid work in CSS.
-                        I created a Pinterest-like "Apartment Inspo Board" to practice. I also worked on making this
-                        site responsive to different sized viewports to work on formatting with both layouts.
-                    </p>
-                </div>
-            </div>
-            <div id="project-7" class="project-title" style="display: none">
-                <a href="https://lindsayjohnston.github.io/HTML-study/main.html" target="_blank">HTML Study</a>
-                <div class="paragraph">
-                    <p class="project-text"> This study was created using (almost exclusively) HTML. It's not the
-                        prettiest project, but it gives examples of the most widely-used HTML elements.
-                    </p>
-                </div>
-            </div>
-
         </div>
-
-    </div>
-
     <!-- About Me -->
-
-    <div id="about">
-
+    <div id="about-me" class='section-heading'>
+        <h1>About Me</h1>
+    </div>
         <div id="about-container" class="container">
-            <div id="about-sec-1">
-                <h1>About Me</h1>
-                <a href="#" class="about-me-link">
-                    <h2>Resume</h2>
-                </a>
-                <a href="https://github.com/lindsayjohnston" class="about-me-link" target="_blank">
-                    <h2>GitHub</h2>
-                </a>
-
-
-            </div>
-            <div id="about-sec-2"></div>
+            
             <div id="about-sec-3">
                 <p>I have had a myriad of different professional experiences: after graduating with a double-major in
                     Math and Spanish from Whitworth University, I worked at Habitat for Humanity. I then completed a
@@ -144,13 +93,15 @@
                     writing songs and performing. I toured the West Coast under the stage name "Vanna Oh!" until
                     COVID-19 shut down the entertainment industry. Now, I am learning software engineering in hopes of
                     eventually landing a remote job that will allow me to continue playing music.</p>
+                    <a href="#" class="about-me-link">
+                        <h2>Resume</h2>
+                    </a>
+                    <a href="https://github.com/lindsayjohnston" class="about-me-link" target="_blank">
+                        <h2>GitHub</h2>
+                    </a>
             </div>
+            <div id="about-sec-2"></div>
         </div>
-
-    </div>
-
-
-
     <!-- What's Next -->
 
     <div id="next">
